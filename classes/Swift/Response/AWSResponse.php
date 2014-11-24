@@ -4,12 +4,12 @@ class Swift_Response_AWSResponse {
 	
 	protected $message;
 	
-	protected $body;
+	protected $awsResponse;
 	
-	public function __construct( Swift_Mime_Message $message, $body = null )
+	public function __construct( Swift_Mime_Message $message, $awsResponse = null )
 	{
 		$this->message = $message;
-		$this->body = $body;
+		$this->awsResponse = $awsResponse;
 	}
 	
 	function getMessage()
@@ -17,9 +17,9 @@ class Swift_Response_AWSResponse {
 		return $this->message;
 	}
 
-	function getBody()
+	function getAwsResponse()
 	{
-		return $this->body;
+		return $this->awsResponse;
 	}
 
 	function setMessage( $message )
@@ -28,9 +28,9 @@ class Swift_Response_AWSResponse {
 		return $this;
 	}
 
-	function setBody( $body )
+	function setAwsResponse( $awsResponse )
 	{
-		$this->body = $body;
+		$this->awsResponse = $awsResponse;
 		return $this;
 	}
 }

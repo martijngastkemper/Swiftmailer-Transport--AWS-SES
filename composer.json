@@ -1,20 +1,23 @@
 {
-    "name": "jmhobbs/swiftmailer-transport-aws-ses",
-		"type": "library",
-		"description": "Add AWS SES support to Swiftmailer",
-		"keywords": [ "email", "swiftmailer", "SES", "AWS" ],
-		"license": "MIT",
-		"authors": [
-			{
-				"name": "John Hobbs",
-				"email": "john@velvetcache.org"
-			}
-		],
-    "require": {
-        "php": ">=5.2.0",
-        "swiftmailer/swiftmailer": ">=4.0.0"
-    },
-		"autoload": {
-			"psr-0": { "": "classes/" }
+	"name": "jmhobbs/swiftmailer-transport-aws-ses",
+	"type": "library",
+	"description": "Add AWS SES support to Swiftmailer",
+	"keywords": ["email", "swiftmailer", "SES", "AWS"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "John Hobbs",
+			"email": "john@velvetcache.org"
 		}
+	],
+	"require": {
+		"php": ">=5.2.0",
+		"swiftmailer/swiftmailer": ">=4.0.0",
+		"aws/aws-sdk-php": "~2.7"
+	},
+	"autoload": {
+		"psr-0": {
+			"": "classes/"
+		}
+	}
 }
